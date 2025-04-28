@@ -1,0 +1,34 @@
+# Go関連
+bin/
+*.exe
+*.test
+*.out
+
+# モジュールキャッシュ・ビルドキャッシュ
+vendor/
+*.mod
+*.sum
+
+# IDE・エディタ関連（GoLand, VSCodeなど）
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker関連
+.env
+docker-compose.override.yml
+
+# PostgreSQLダンプファイルなど
+*.sql
+
+# OS関連
+.DS_Store
+Thumbs.db
+
+# Learningディレクトリで除外するなら（任意）
+# learning/go-tour/bin/
+# learning/go-tour/*.out
+
+# Logs
+*.log
