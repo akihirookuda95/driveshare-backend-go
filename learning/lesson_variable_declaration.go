@@ -1,23 +1,21 @@
 package main
 
-import "fmt"
-
 var a int = 1 // a is a global variable, declared outside a function
 // b := 2 // error: b is not declared outside a function
 
-func foo() {
-	// short variable declaration using inside only a function
-	xi := 1         // xi is a shorthand for var xi int = 1
-	fmt.Println(xi) // 1
-	xi = 2
-	fmt.Println(xi) // 2
-	var xf32 float32 = 1.2
-	xs := "Hello, World!"             // xs is a shorthand for var xs string = "Hello, World!"
-	xt, xf := true, false             // xt is a shorthand for var xt, xf bool = true, false
-	fmt.Println(xi, xf32, xs, xt, xf) // 1 1.2 Hello, World! true false
-	fmt.Printf("%T\n", xf32)          // float32, %T is a format specifier for type
-	fmt.Printf("%T\n", xi)            // int, \n is a format specifier for new line
-}
+//func foo() {
+//	// short variable declaration using inside only a function
+//	xi := 1         // xi is a shorthand for var xi int = 1
+//	fmt.Println(xi) // 1
+//	xi = 2
+//	fmt.Println(xi) // 2
+//	var xf32 float32 = 1.2
+//	xs := "Hello, World!"             // xs is a shorthand for var xs string = "Hello, World!"
+//	xt, xf := true, false             // xt is a shorthand for var xt, xf bool = true, false
+//	fmt.Println(xi, xf32, xs, xt, xf) // 1 1.2 Hello, World! true false
+//	fmt.Printf("%T\n", xf32)          // float32, %T is a format specifier for type
+//	fmt.Printf("%T\n", xi)            // int, \n is a format specifier for new line
+//}
 
 /*
 func main() {
