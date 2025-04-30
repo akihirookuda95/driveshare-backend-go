@@ -19,6 +19,7 @@ func foo() {
 	fmt.Printf("%T\n", xi)            // int, \n is a format specifier for new line
 }
 
+/*
 func main() {
 	// parenthesis () are used to group expressions inside and outside a function
 	var (
@@ -49,3 +50,4 @@ func main() {
 
 	foo()
 }
+*/
