@@ -1,14 +1,12 @@
 package main
 
-import "fmt"
-
 // function having variadic arguments, ... is used to indicate that the function can take a variable number of arguments
-func foo(params ...int) {
-	fmt.Println(len(params), params)
-	for _, param := range params {
-		fmt.Println(param)
-	}
-}
+//func foo(params ...int) {
+//	fmt.Println(len(params), params)
+//	for _, param := range params {
+//		fmt.Println(param)
+//	}
+//}
 
 //func main() {
 //	foo()           // 0 []
