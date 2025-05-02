@@ -15,9 +15,9 @@ func save() {
 	}()
 }
 
-func main() {
-	save()
-
-	fmt.Println("ok")
-
-}
+//func main() {
+//	save()
+//
+//	fmt.Println("ok")
+//
+//}
