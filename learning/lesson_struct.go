@@ -7,13 +7,13 @@ package main
 //	S string
 //}
 
-func changeVertex(v Vertex) {
-	v.X = 1000
-}
-
-func changeVertex2(v *Vertex) {
-	v.X = 1000 // equivalent to (*v).X = 1000, but automatically dereference
-}
+//func changeVertex(v Vertex) {
+//	v.X = 1000
+//}
+//
+//func changeVertex2(v *Vertex) {
+//	v.X = 1000 // equivalent to (*v).X = 1000, but automatically dereference
+//}
 
 //func main() {
 //	/*
