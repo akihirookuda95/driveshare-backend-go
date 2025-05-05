@@ -1,38 +1,36 @@
 package main
 
-import "fmt"
-
-type Vertex struct {
-	x, y int // coordinates
-}
-
-func (v Vertex) Area() int {
-	return v.x * v.y
-}
-
-// pointer receiver
-func (v *Vertex) Scale(i int) {
-	v.x = v.x * i
-	v.y = v.y * i
-}
-
-// variable receiver
-//func Area(v Vertex) int {
+//type Vertex struct {
+//	x, y int // coordinates
+//}
+//
+//func (v Vertex) Area() int {
 //	return v.x * v.y
 //}
+//
+//// pointer receiver
+//func (v *Vertex) Scale(i int) {
+//	v.x = v.x * i
+//	v.y = v.y * i
+//}
+//
+//// variable receiver
+////func Area(v Vertex) int {
+////	return v.x * v.y
+////}
+//
+//// constructor
+//func New(x, y int) *Vertex {
+//	return &Vertex{x, y}
+//}
 
-// constructor
-func New(x, y int) *Vertex {
-	return &Vertex{x, y}
-}
-
-func main() {
-	// v := Vertex{3, 4}
-	// fmt.Println(Area(v)) // function receiver
-
-	// v.Scale(10) // pointer receiver
-
-	v := New(3, 4)
-	v.Scale(10)
-	fmt.Println(v.Area()) // method receiver
-}
+//func main() {
+//	// v := Vertex{3, 4}
+//	// fmt.Println(Area(v)) // function receiver
+//
+//	// v.Scale(10) // pointer receiver
+//
+//	v := New(3, 4)
+//	v.Scale(10)
+//	fmt.Println(v.Area()) // method receiver
+//}
