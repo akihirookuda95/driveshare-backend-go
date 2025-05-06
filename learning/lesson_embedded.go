@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type Vertex struct {
 	x, y int // coordinates
 }
@@ -47,9 +45,9 @@ func New(x, y, z int) *Vertex3D {
 	return &Vertex3D{Vertex{x, y}, z}
 }
 
-func main() {
-	v := New(3, 4, 5)
-	v.Scale(10)
-	fmt.Println(v.Area())   // 1200
-	fmt.Println(v.Area3D()) // 6000
-}
+//func main() {
+//	v := New(3, 4, 5)
+//	v.Scale(10)
+//	fmt.Println(v.Area())   // 1200
+//	fmt.Println(v.Area3D()) // 6000
+//}
