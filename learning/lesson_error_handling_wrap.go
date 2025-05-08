@@ -14,9 +14,9 @@ func readFile(filename string) error {
 	return nil
 }
 
-func main() {
-	err := readFile("non_existent_file.txt")
-	if err != nil {
-		fmt.Println(err)
-	}
-}
+//func main() {
+//	err := readFile("non_existent_file.txt")
+//	if err != nil {
+//		fmt.Println(err)
+//	}
+//}
