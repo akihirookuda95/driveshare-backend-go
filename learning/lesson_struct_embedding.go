@@ -25,17 +25,17 @@ func (a Admin) GetPermissions() string {
 	return fmt.Sprintf("Admin %s has permissions: %v", a.Name, a.Permissions)
 }
 
-func main() {
-	admin := Admin{
-		User: User{
-			ID:   1,
-			Name: "Alice",
-			Age:  30,
-		},
-		Permissions: []string{"read", "write", "delete"},
-	}
-
-	// Userのメソッドを呼び出す
-	fmt.Println(admin.GetDetails())
-	fmt.Println(admin.GetPermissions())
-}
+//func main() {
+//	admin := Admin{
+//		User: User{
+//			ID:   1,
+//			Name: "Alice",
+//			Age:  30,
+//		},
+//		Permissions: []string{"read", "write", "delete"},
+//	}
+//
+//	// Userのメソッドを呼び出す
+//	fmt.Println(admin.GetDetails())
+//	fmt.Println(admin.GetPermissions())
+//}
