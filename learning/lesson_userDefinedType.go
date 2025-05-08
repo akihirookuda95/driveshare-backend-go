@@ -19,11 +19,11 @@ func GetUserNameByID(id UserID) string {
 }
 
 // 2. struct types
-type User struct {
-	ID   UserID
-	Name string
-	Age  int
-}
+//type User struct {
+//	ID   UserID
+//	Name string
+//	Age  int
+//}
 
 func (u User) IsAdult() bool {
 	return u.Age > 18
@@ -66,31 +66,31 @@ func Increment(p IntPointer) {
 	*p++
 }
 
-func main() {
-	// 1. new types based on existing types
-	var id UserID = 101
-	fmt.Println(GetUserNameByID(id)) // User ID: 101
-
-	// 2. struct types
-	user := User{ID: id, Name: "John Doe", Age: 25}
-	fmt.Println(user.IsAdult()) // true
-
-	// 3. new types based on slice, map and channel
-	products := ProductList{"Laptop", "Smartphone", "Tablet"}
-	products.PrintAll() // Laptop Smartphone Tablet
-
-	// 4. interface
-	animals := []Animal{
-		Dog{Name: "Buddy"},
-		Cat{Name: "Whiskers"},
-	}
-	for _, animal := range animals {
-		fmt.Println(animal.Speak()) // Buddy says Woof! Whiskers says Meow!
-	}
-
-	// 5. pointer types
-	var value int = 10
-	var p IntPointer = &value
-	Increment(p)
-	fmt.Println(*p) // 11
-}
+//func main() {
+//	// 1. new types based on existing types
+//	var id UserID = 101
+//	fmt.Println(GetUserNameByID(id)) // User ID: 101
+//
+//	// 2. struct types
+//	user := User{ID: id, Name: "John Doe", Age: 25}
+//	fmt.Println(user.IsAdult()) // true
+//
+//	// 3. new types based on slice, map and channel
+//	products := ProductList{"Laptop", "Smartphone", "Tablet"}
+//	products.PrintAll() // Laptop Smartphone Tablet
+//
+//	// 4. interface
+//	animals := []Animal{
+//		Dog{Name: "Buddy"},
+//		Cat{Name: "Whiskers"},
+//	}
+//	for _, animal := range animals {
+//		fmt.Println(animal.Speak()) // Buddy says Woof! Whiskers says Meow!
+//	}
+//
+//	// 5. pointer types
+//	var value int = 10
+//	var p IntPointer = &value
+//	Increment(p)
+//	fmt.Println(*p) // 11
+//}
