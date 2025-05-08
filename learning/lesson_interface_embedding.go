@@ -1,8 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
+//import (
+//	"fmt"
+//)
 
 // 基本的なインターフェース
 type Reader interface {
@@ -32,10 +32,10 @@ func (f *File) Write(data string) {
 	f.Content = data
 }
 
-func main() {
-	var file ReadWriter = &File{}
-
-	file.Write("Hello, Go!")
-	fmt.Println(file.Read()) // Hello, Go!
-
-}
+//func main() {
+//	var file ReadWriter = &File{}
+//
+//	file.Write("Hello, Go!")
+//	fmt.Println(file.Read()) // Hello, Go!
+//
+//}
