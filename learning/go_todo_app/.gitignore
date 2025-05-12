@@ -1,0 +1,21 @@
+# Goのビルド生成物
+/bin/
+/build/
+
+# Goのモジュールキャッシュ
+/pkg/mod/
+
+# 実行バイナリ
+*.exe
+*.out
+*.test
+
+# IDE・エディタ設定
+.vscode/
+.idea/
+
+# OSファイル
+.DS_Store
+
+# 環境ファイル
+.env
